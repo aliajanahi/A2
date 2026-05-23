@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>RHIA ART Gallery</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <header>
+
+        <nav>
+
+            <div class="logo">
+
+                <img src="images/logo.png" alt="Logo">
+
+            </div>
+
+            <ul>
+
+                <li><a href="index.html">Home</a></li>
+
+                <li><a href="about.html">About</a></li>
+
+                <li><a href="gallery.html">Gallery</a></li>
+
+                <li><a href="contact.html">Contact</a></li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+    <!-- TITLE -->
+
+    <section class="gallery-title">
+
+        <h1>Art Collections</h1>
+        <br><br>
+        <p>
+            Click an artwork to explore more paintings
+            from the same collection.
+        </p>
+
+    </section>
+
+
+    <!-- MAIN GALLERY -->
+    <section class="gallery">
+
+        <!-- ART 1 -->
+
+        <div class="art-card">
+            <img class="rotate reflect" id="art_1" src="images/art_1.png" onclick="changeArt('art_1', 0)">
+
+
+            <h3>Traces of Spring</h3>
+
+            <p>
+                Inspired by peaceful landscapes and soft earth tones.
+            </p>
+
+        </div>
+
+
+        <!-- ART 2 -->
+
+        <div class="art-card">
+            <img class="rotate reflect" id="art_2" src="images/art_2.png" onclick="changeArt('art_2', 1)">
+
+            <h3>Golden Reflections</h3>
+
+            <p>
+                A modern abstract painting inspired by sunlight.
+            </p>
+
+        </div>
+
+
+        <!-- ART 3 -->
+
+        <div class="art-card">
+            <img class="rotate reflect" id="art_3" src="images/art_3.png" onclick="changeArt('art_3', 2)">
+
+            <h3>Silent Harmony</h3>
+
+            <p>
+                Soft textures and colors expressing calmness.
+            </p>
+
+        </div>
+
+
+        <!-- ART 4 -->
+
+        <div class="art-card">
+            <img class="rotate reflect" id="art_4" src="images/art_4.png" onclick="changeArt('art_4', 3)">
+
+
+            <h3>Abstract Dreams</h3>
+
+            <p>
+                A collection inspired by imagination and creativity.
+            </p>
+
+        </div>
+
+
+        <!-- ART 5 -->
+
+        <div class="art-card">
+            <img class="rotate reflect" id="art_5" src="images/art_5.png" onclick="changeArt('art_5', 4)">
+
+
+            <h3>Earth & Emotion</h3>
+
+            <p>
+                Warm neutral tones reflecting artistic movement.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- COLLECTION IMAGES -->
+
+    <section class="collection-gallery" id="collectionGallery">
+
+    </section>
+
+    <div id="lightbox" onclick="this.style.display='none'">
+        <img id="lightbox-img">
+    </div>
+    <footer>
+
+        <p>
+            © 2026 RHIA ART
+        </p>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
